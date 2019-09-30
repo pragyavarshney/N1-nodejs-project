@@ -3,7 +3,7 @@
 //      and sort by the name of the route.  Render information in the views/pages/mongodb.ejs
 app.get('/mongodb', function (request, response) {
 
-  mongodb.MongoClient.connect(process.env.MONGODB_URI, function(err, db) {
+  mongodb.MongoClient.connect("mongodb://<dbuser>:<dbpassword>@ds211275.mlab.com:11275/heroku_mgqgm6t8", function(err, db) {
     if(err) throw err;
     //get collection of routes
     var Routes = db.collection('Routes');
