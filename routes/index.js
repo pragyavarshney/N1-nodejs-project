@@ -4,7 +4,7 @@ var MongoClient = require('mongodb').MongoClient;
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Hello how are u ' });
+  res.render('index', { title: 'CSU,Eastbay' });
 });
 
 //**************************
